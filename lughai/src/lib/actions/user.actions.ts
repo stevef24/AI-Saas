@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { connectToDatabase } from "../mongoose";
-import User from "../database/models/user.mode";
+import User from "../database/models/user.model";
 import { handleError } from "../utils";
 
 // CREATE
