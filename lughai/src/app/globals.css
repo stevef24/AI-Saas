@@ -343,6 +343,14 @@
 	.transformed-placeholder {
 		@apply flex-center p-14-medium h-full min-h-72 flex-col gap-5 rounded-[16px] border border-dashed bg-purple-100/20 shadow-inner;
 	}
+
+	.root {
+		@apply flex min-h-screen w-full flex-col bg-background lg:flex-row;
+	}
+
+	.root-container {
+		@apply mt-16 flex-1 overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10;
+	}
 }
 
 /* =====  CLERK OVERRIDES */

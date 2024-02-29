@@ -29,11 +29,11 @@ export default function RootLayout({
 				},
 			}}
 		>
-			<ThemeProvider>
-				<html lang="en">
-					<body className={`${poppins.className} antialiased`}>{children}</body>
-				</html>
-			</ThemeProvider>
+			<html lang="en">
+				<body className={`${poppins.className} antialiased`}>
+					<ThemeProvider>{children}</ThemeProvider>
+				</body>
+			</html>
 		</ClerkProvider>
 	);
 }
