@@ -2,6 +2,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/provider/theme-provider";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -28,9 +29,11 @@ export default function RootLayout({
 				},
 			}}
 		>
-			<html lang="en">
-				<body className={`${poppins.className} antialiased`}>{children}</body>
-			</html>
+			<ThemeProvider>
+				<html lang="en">
+					<body className={`${poppins.className} antialiased`}>{children}</body>
+				</html>
+			</ThemeProvider>
 		</ClerkProvider>
 	);
 }
