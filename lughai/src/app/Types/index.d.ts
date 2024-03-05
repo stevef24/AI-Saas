@@ -136,3 +136,8 @@ declare type TransformedImageProps = {
 	hasDownload?: boolean;
 	setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
+declare type GetAllImagesParams = {
+	limit?: number;
+	page?: number;
+	searchQuery?: string;
+};
